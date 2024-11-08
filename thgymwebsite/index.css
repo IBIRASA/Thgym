@@ -34,6 +34,7 @@ body {
     text-decoration: none;
     color: black;
     font-weight: bolder;
+    font-size: 13px
    
 }
 
@@ -51,6 +52,11 @@ body {
 
 .navbar-button i {
     margin-right: 8px;
+    color: rgb(135, 135, 248);
+}
+.navbar-button span{
+ 
+    font-size: 13px;
 }
 
 .bg-image {
