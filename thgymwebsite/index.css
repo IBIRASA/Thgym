@@ -87,7 +87,7 @@ body {
 .header-1 {
     position: relative;
     color: white;
-    font-size: 80px;
+    font-size: 65px;
     font-weight: bolder;
     z-index: 2;
     text-align: center;
@@ -100,13 +100,24 @@ body {
     width: 90%;
     max-width: 1200px;
     background-color: white;
-    padding: 60px 20px;
+    padding: 20px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: -200px; 
+    margin-top: -250px; 
     left: 20%;
 }
-
+.maincontent-div input {
+  padding: 12px 80px;
+  border-radius: 10px;
+}
+.input-btn
+{
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: rgb(6, 6, 46);
+    color: white;
+    font-weight: bolder;
+}
 @media (max-width: 768px) {
     .header-1 {
         font-size: 50px;
