@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arimo', sans-serif;
+}
+
+.navbar-logo {
+    font-weight: bolder;
+    color: rgb(5, 5, 207);
+    font-size: 40px;
+}
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 230px;
+    background-color: white;
+}
+
+.navbar-list {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    align-items: center;
+ 
+ 
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+   
+}
+
+.navbar-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid rgb(216, 213, 213);
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.navbar-button i {
+    margin-right: 8px;
+}
+
+.bg-image {
+    position: relative;
+    background-image: url("./images/man.jpeg"); 
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.header-1 {
+    position: relative;
+    color: white;
+    font-size: 80px;
+    font-weight: bolder;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.maincontent-div {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -200px; 
+    left: 20%;
+}
+
+@media (max-width: 768px) {
+    .header-1 {
+        font-size: 50px;
+    }
+    
+    .navbar-logo {
+        font-size: 30px;
+    }
+
+    .navbar-top {
+        padding: 20px;
+    }
+    
+    .maincontent-div {
+        width: 95%;
+        padding: 15px;
+    }
+}
